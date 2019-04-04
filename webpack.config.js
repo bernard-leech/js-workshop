@@ -27,6 +27,22 @@ module.exports = {
           loader: 'babel-loader'
         }
       }
+      // {
+      //   test: /\.s?css$/,
+      //   use: [
+      //     MiniCssExtractPlugin.loader,
+      //     {
+      //       loader: 'css-loader'
+      //     },
+      //     {
+      //       loader: 'postcss-loader'
+      //     },
+      //     {
+      //       loader: 'sass-loader'
+      //     }
+      //   ],
+      //   include: path.join(__dirname, '/src')
+      // }
     ]
   },
   plugins: [
