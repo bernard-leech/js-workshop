@@ -1,0 +1,25 @@
+.status-pill {
+  display: inline-block;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0 0.75rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+  font-weight: 600;
+  color: rgb(120, 135, 165);
+  border-color: rgb(234, 236, 241);
+  border-width: 2px;
+  border-style: solid;
+
+
+  &.status-pill--error {
+    border-color: red;
+    color: red;
+  }
+
+  &.status-pill--success {
+    border-color: green;
+    color: green;
+  }
+}
