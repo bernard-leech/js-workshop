@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import StatusPill from '../../1-atoms/StatusPill'
+import StatusPill from '../../1-atoms/status-pill/StatusPill'
 
 import type { TableRowType } from './TableRow.types'
 
