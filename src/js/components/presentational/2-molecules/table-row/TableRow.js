@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
-// TODO: install classnames
-// import classNames from 'classnames'
+
+import StatusPill from '../../1-atoms/status-pill/StatusPill'
 
 import type { TableRowType } from './TableRow.types'
 
@@ -17,7 +17,7 @@ function TableRow (props: TableRowType) {
       <div>{heading}</div>
       <div>{money}</div>
       <div>{date}</div>
-      <div>{status}</div>
+      <StatusPill status={status} children={status} />
     </div>
   )
 }
