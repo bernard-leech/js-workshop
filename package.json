@@ -11,7 +11,8 @@
     "build:dev": "webpack --mode development",
     "start:dev": "webpack-dev-server",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Crunch FEDs",
@@ -29,8 +30,10 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.11.1",
+    "jest": "^24.7.1",
     "mini-css-extract-plugin": "^0.5.0",
     "postcss-loader": "^3.0.0",
+    "react-test-renderer": "^16.8.6",
     "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",

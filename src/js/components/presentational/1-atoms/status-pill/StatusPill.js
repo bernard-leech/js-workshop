@@ -2,9 +2,9 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import type { StatusPillType } from './StatusPill.types'
+// import type { StatusPillType } from './StatusPill.types'
 
-function StatusPill (props: StatusPillType) {
+function StatusPill (props) {
   const {
     status,
     children

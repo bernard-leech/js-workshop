@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly - error 1`] = `
+<div
+  className="status-pill status-pill--error"
+>
+  Overdue
+</div>
+`;
+
+exports[`renders correctly - success 1`] = `
+<div
+  className="status-pill status-pill--success"
+>
+  Paid
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="status-pill"
+/>
+`;

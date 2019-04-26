@@ -9,6 +9,6 @@ An app built by participants of the Crunch Javascript Workshop.
 Command                   | Description
 ------------------------- | -----------
 `npm i`                   | Install dependancies
-`npm start:dev`           | Start app dev server
-`npm storybook`           | Start storybook
-
+`npm run start:dev`       | Start app dev server
+`npm run storybook`       | Start storybook
+`npm run test`            | Run tests
