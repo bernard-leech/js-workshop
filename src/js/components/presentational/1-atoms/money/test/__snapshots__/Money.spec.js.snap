@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="number"
+  style={
+    Object {
+      "fontFamily": "-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\\"Helvetica Neue\\",sans-serif",
+      "fontVariantNumeric": "tabular-nums",
+    }
+  }
+>
+  £1,234.56
+</div>
+`;

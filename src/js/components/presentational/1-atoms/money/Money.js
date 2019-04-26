@@ -1,13 +1,13 @@
 // @flow
 import React from 'react'
 
-import type { MoneyType } from './Money.types'
+// import type { MoneyType } from './Money.types'
 
 function numberWithSeparator(number, separator) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
 }
 
-function Money (props: MoneyType) {
+function Money (props) {
   const {
     moneyValue,
     currencySymbol = '£',

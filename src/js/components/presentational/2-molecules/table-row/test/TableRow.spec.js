@@ -1,14 +1,13 @@
-// @flow
 import React from 'react'
-import { mount } from 'enzyme'
-import { expect } from 'chai'
+import TestRenderer from 'react-test-renderer'
 
-import Component from '../TableRow'
 import { props } from '../test/TableRow.mock'
 
-describe('<TableRow />', () => {
-  it('renders correctly', () => {
-    const tree = mount(<Component {...props} />)
-    expect(tree.debug()).to.matchSnapshot()
-  })
+import TableRow from '../TableRow'
+
+it('renders correctly', () => {
+  const tree = TestRenderer
+    .create(<TableRow />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
 })

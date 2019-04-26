@@ -1,14 +1,27 @@
-// @flow
 import React from 'react'
-import { mount } from 'enzyme'
-import { expect } from 'chai'
+import TestRenderer from 'react-test-renderer'
 
-import Component from '../StatusPill'
-import { props } from '../test/StatusPill.mock'
+import { propsError, propsSuccess } from './StatusPill.mock'
 
-describe('<StatusPill />', () => {
-  it('renders correctly', () => {
-    const tree = mount(<Component {...props} />)
-    expect(tree.debug()).to.matchSnapshot()
-  })
+import StatusPill from '../StatusPill'
+
+it('renders correctly', () => {
+  const tree = TestRenderer
+    .create(<StatusPill />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+it('renders correctly - success', () => {
+  const tree = TestRenderer
+    .create(<StatusPill {...propsSuccess} />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+it('renders correctly - error', () => {
+  const tree = TestRenderer
+    .create(<StatusPill {...propsError} />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
 })
